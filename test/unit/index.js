@@ -12,5 +12,5 @@ testsContext.keys().forEach(testsContext);
 // const srcContext = require.context('../../src', true, /^\.\/(?!main(\.js)?$)/);
 // srcContext.keys().forEach(srcContext);
 
-const srcContext = require.context('../../src/utils', true);
+const srcContext = require.context('../../src', true, /^\.\/(?!main(\.js)?$)/);
 srcContext.keys().forEach(srcContext);

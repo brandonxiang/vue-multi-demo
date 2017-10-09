@@ -2,11 +2,11 @@
 // http://nightwatchjs.org/guide#usage
 
 module.exports = {
-  'default e2e tests': function test(browser) {
+  'default e2e Hello': function test(browser) {
     // automatically uses dev Server port from /config.index.js
     // default: http://localhost:8080
     // see nightwatch.conf.js
-    const devServer = browser.globals.devServerURL;
+    const devServer = browser.globals.devServerURL + '/module/Hello.html';
 
     browser
       .url(devServer)
